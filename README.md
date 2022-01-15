@@ -12,7 +12,7 @@ Server-Side Rendering: JSX
 
 Node Modules: method-override, dotenv, express-react-views
 
-###### Routes
+### `Routes`
 
 |  Method      |  Path      |  Purpose      |
 |:-------------|:-----------|:--------------|
@@ -28,7 +28,7 @@ Node Modules: method-override, dotenv, express-react-views
 |  DELETE     |  `/places/:id/rant/:rantId`  |  Delete a rant (comment) about a particular place  |
 |  GET        |  `*`        |  404 page (matches any route not defined above)  |
 
-###### Database
+### `Database`
 
 places
 
