@@ -17,10 +17,12 @@ router.post('/', (req, res) => {
     res.redirect('/places')
   })
 
+  // Renders form
 router.get('/new', (req, res) => {
     res.render('places/newform')
   })
 
+  // Renders places page
 router.get('/', (req, res) => {
     res.render('places/index', {places})
 })
