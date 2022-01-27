@@ -28,7 +28,7 @@ router.get('/new', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-  db.Place.findById(req.params.id)
+  db.Place.findById(req.params.id.toString())
   .then(place => {
       res.render('places/show', { place })
   })
