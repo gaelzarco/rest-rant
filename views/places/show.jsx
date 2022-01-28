@@ -8,6 +8,7 @@ function show (data) {
             <img style={{width: "80%"}} src={ data.place.pic } alt={"image of" && data.place.pic} />
             <div>
                 <h1>{ data.place.name }</h1>
+                {/*REDUNDANT <h3>Located in {data.place.city}, {data.place.state}</h3> */}
             </div>
             <div>
                 <h2>Rating</h2>
@@ -15,7 +16,12 @@ function show (data) {
             </div>
             <div>
                 <h2>Description</h2>
-                <p>Located in {data.place.city}, {data.place.state} and serving {data.place.cuisines}</p>
+                <h3>
+                    {data.place.showEstablished()}
+                </h3>
+                <h4>
+                    Serving {data.place.cuisines}
+                </h4>
             </div>
             <div>
                 <h2>Comments</h2>
